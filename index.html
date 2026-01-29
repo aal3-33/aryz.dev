@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="hide-cursor">
+    <div class="logo-container">
+        <div class="logo">AryZ</div>
+        <div class="logo-hidden">Aryz</div>
+    </div>
+    <div class="nav-links">
+        <div class="nav-link-container active" data-index="0">
+            <a href="#about" class="nav-link-base">ABOUT</a>
+            <span class="nav-link-overlay">ABOUT</span>
+        </div>
+        <div class="nav-link-container" data-index="1">
+            <a href="#work" class="nav-link-base">WORK</a>
+            <span class="nav-link-overlay">WORK</span>
+        </div>
+        <div class="nav-link-container" data-index="2">
+            <a href="#contact" class="nav-link-base">CONTACT</a>
+            <span class="nav-link-overlay">CONTACT</span>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="text-container">
+            <div class="main-text">
+                <div class="word">Creativity</div>
+                <div class="word">Is</div>
+                <div class="word">Stupid</div>
+            </div>
+            <div class="reveal-blob"></div>
+            <div class="hidden-text">
+                <div class="word">Overthinking</div>
+                <div class="word">Kills</div>
+                <div class="word">Creativity</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

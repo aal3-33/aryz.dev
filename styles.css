@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Bigilla';
+    src: url('Bigilla-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Devina Garden';
+    src: url('Devina Garden.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    min-height: 100vh;
+}
+
+body.hide-cursor,
+body.hide-cursor * {
+    cursor: none !important;
+}
+
+.logo-container {
+    position: fixed;
+    top: 30px;
+    left: 40px;
+    z-index: 100;
+    cursor: none;
+}
+
+.logo {
+    font-family: 'Devina Garden', cursive;
+    font-size: 48px;
+    color: #ffffff;
+}
+
+.logo-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Devina Garden', cursive;
+    font-size: 48px;
+    color: #000000;
+    pointer-events: none;
+    clip-path: circle(10px at 0px 0px);
+}
+
+.nav-links {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 100;
+    cursor: none;
+}
+
+.nav-link-container {
+    position: relative;
+    cursor: none;
+}
+
+.nav-link-base {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.nav-link-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    pointer-events: none;
+    clip-path: inset(0 0 100% 0);
+}
+
+.nav-link-container.active .nav-link-overlay {
+    clip-path: inset(0 0 0% 0);
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.text-container {
+    position: relative;
+    cursor: none;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.main-text .word {
+    font-family: 'Bigilla', sans-serif;
+    font-size: 120px;
+    color: #ffffff;
+    line-height: 1.1;
+}
+
+.hidden-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none;
+    z-index: 10;
+    clip-path: circle(10px at 0px 0px);
+}
+
+.hidden-text .word {
+    font-family: 'Bigilla', sans-serif;
+    font-size: 120px;
+    color: #000000;
+    line-height: 1.1;
+}
+
+.reveal-blob {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 11;
+    transform: translate(-50%, -50%);
+    transition: none;
+}

@@ -1,5 +1,11 @@
 lucide.createIcons();
 
+document.addEventListener('selectstart', e => e.preventDefault());
+document.addEventListener('copy', e => e.preventDefault());
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.documentElement.style.userSelect = 'none';
+document.documentElement.style.webkitUserSelect = 'none';
+
 gsap.registerPlugin(ScrollTrigger);
 
 const lenis = new Lenis({

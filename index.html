@@ -1,22 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
-  <meta http-equiv="refresh" content="0; url=https://aryz.dev">
-  
-  <title>Redirecting...</title>
-  
-  <script>
-    window.location.replace("https://aryz.dev");
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AryZ — Creative Dev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js" defer></script>
+<script src="https://unpkg.com/lucide@latest" defer></script>
+<script src="script.js" defer></script>
 </head>
 <body>
-  <p>If you are not redirected automatically, <a href="https://aryz.dev">click here</a>.</p>
-  
-  <noscript>
-    <meta http-equiv="refresh" content="0; url=https://aryz.dev">
-  </noscript>
+<div id="cursor"></div>
+
+<div id="loader">
+  <div id="lc">000</div>
+  <div id="lb"></div>
+  <div id="lt">Loading Experience</div>
+</div>
+
+<nav>
+  <a href="#" class="nlogo mag" data-scroll-to="top">AryZ</a>
+  <div class="nlinks">
+    <a href="#about" class="nlink mag" data-scroll-to="about">About</a>
+    <a href="#testimonials" class="nlink mag" data-scroll-to="testimonials">Reviews</a>
+    <a href="#skills" class="nlink mag" data-scroll-to="skills">Stack</a>
+    <a href="#contact" class="nlink mag" data-scroll-to="contact">Contact</a>
+  </div>
+  <button class="hbg" id="hbg" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mmenu" id="mmenu">
+  <a href="#about" class="mlink" data-scroll-to="about">About</a>
+  <a href="#testimonials" class="mlink" data-scroll-to="testimonials">Reviews</a>
+  <a href="#skills" class="mlink" data-scroll-to="skills">Stack</a>
+  <a href="#contact" class="mlink" data-scroll-to="contact">Contact</a>
+  <div class="mbot">
+    <span class="mtag">AryZ — London</span>
+    <span class="mtag">© 2026</span>
+  </div>
+</div>
+
+<section id="hero">
+  <div class="hnoise"></div>
+  <div class="hgrid"></div>
+  <div class="heyebrow"><div class="hbadge">Available for work</div></div>
+  <div class="mwrap" style="position:relative;z-index:1;">
+    <div class="mtrack" id="mt1">
+      <span class="mi">DESIGN <span>✦</span></span>
+      <span class="mi">DEVELOPMENT <span>✦</span></span>
+      <span class="mi">CREATIVITY <span>✦</span></span>
+      <span class="mi">MOTION <span>✦</span></span>
+      <span class="mi">CHAOS <span>✦</span></span>
+      <span class="mi">ARYZ <span>✦</span></span>
+    </div>
+  </div>
+  <div class="htitle-wrap ru">
+    <div class="htitle">
+      <span class="line"><span class="li">CREATIVITY</span></span>
+      <span class="line"><span class="li ao">IS</span></span>
+      <span class="line"><span class="li">STUPID.</span></span>
+    </div>
+  </div>
+  <div class="hsub ru">
+    <p class="hdesc">making things that look <em>genuinely insane</em> and somehow still work.<br>design, dev, and all the chaos in between.<br>based in london. running on spite and caffeine.</p>
+    <div class="hscroll">Scroll to discover</div>
+  </div>
+</section>
+
+<div class="sdiv"><span class="snum">01</span><div class="sline"></div><span class="slbl">Origin Story</span></div>
+
+<section id="about">
+  <div class="alayout">
+    <div>
+      <div class="albl rl">About</div>
+      <h2 class="ahead ru">A year of being<br><em>professional</em><br>(allegedly)</h2>
+      <p class="abody ru">All this started back in <strong>August 2024</strong> — one of those origin stories that sounds better in retrospect. I build digital things: websites, interfaces, experiences. The kind that make people stare at their screen for a second too long.<br><br>Most of my work is private and probably has <strong>zero societal impact</strong>, but it looks incredible, so that's basically the same thing.<br><br>Currently open for projects, collabs, or just vibes.</p>
+    </div>
+    <div class="aright">
+      <div class="titem ru"><div class="tyr">2024</div><div><div class="ttl">The Beginning</div><div class="tdt">Started building. Realised I was actually decent at it. Kept going.</div></div></div>
+      <div class="titem ru"><div class="tyr">2024</div><div><div class="ttl">First Client Work</div><div class="tdt">Got paid. Felt surreal. Did it again.</div></div></div>
+      <div class="titem ru"><div class="tyr">2025</div><div><div class="ttl">Going Serious</div><div class="tdt">Decided to make this a real thing. Still figuring out the business part.</div></div></div>
+      <div class="titem ru"><div class="tyr">2026</div><div><div class="ttl">Right Now</div><div class="tdt">Built this portfolio. Looking for work. Manifesting.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="srow">
+  <div class="scell sanim">
+    <div class="sn">1<sup>+</sup></div>
+    <div class="slb">Year experience</div>
+    <div class="sds">Which is more than 0. Progress.</div>
+  </div>
+  <div class="scell sanim">
+    <div class="sinf">
+      <i data-lucide="infinity" aria-hidden="true"></i>
+    </div>
+    <div class="slb">Commits made</div>
+    <div class="sds">Most of them said "fix" or "update".</div>
+  </div>
+  <div class="scell sanim">
+    <div class="sn" id="svouching">5</div>
+    <div class="slb">People vouching</div>
+    <div class="sds">Two of them are my parents. Still counts.</div>
+  </div>
+</div>
+
+<div class="mwrap dk">
+  <div class="mtrack" id="mt2">
+    <span class="mi">REACT <span>✦</span></span>
+    <span class="mi">CSS SORCERY <span>✦</span></span>
+    <span class="mi">GSAP <span>✦</span></span>
+    <span class="mi">TYPESCRIPT <span>✦</span></span>
+    <span class="mi">NODE.JS <span>✦</span></span>
+    <span class="mi">FIGMA <span>✦</span></span>
+  </div>
+</div>
+
+<div class="sdiv" style="border-top:1px solid rgba(240,237,230,.06)"><span class="snum">02</span><div class="sline"></div><span class="slbl">Social Proof</span></div>
+
+<section id="testimonials">
+  <div class="sheader">
+    <div class="stitle ru">WHAT THEY<br><em>SAY</em></div>
+    <div class="seye">Hover cards to reveal<br>the actual truth</div>
+  </div>
+  <div class="cgrid">
+    <div class="card wide tall">
+      <div class="ctag" data-n="01">Testimonial</div>
+      <div class="cpers">Nakhun — Client</div>
+      <div class="cq lg">"He is amazing, gets the job done very quickly."</div>
+      <div class="ctlbl">Hover for truth</div>
+      <div class="cflip"><div class="cftag">The actual truth</div><div class="cftxt">"He didn't give me a choice to say anything bad."</div><div class="cfp">— Nakhun, under duress</div></div>
+    </div>
+    <div class="card">
+      <div class="ctag" data-n="02">Testimonial</div>
+      <div class="cpers">Reggycee — My hb</div>
+      <div class="cq">"Aryan is a funny individual and amazing to work with."</div>
+      <div class="cq">"Aryz is a funny individual and amazing to work with."</div>
+      <div class="ctlbl">Hover for truth</div>
+      <div class="cflip"><div class="cftag">The actual truth</div><div class="cftxt">"He's holding my bank details hostage."</div><div class="cfp">— Reggycee, not coerced</div></div>
+    </div>
+    <div class="card">
+      <div class="ctag" data-n="03">Character witness</div>
+      <div class="cpers">My Mum — Biological Relation</div>
+      <div class="cq">"This lazy kid makes me wonder if he's actually related to me."</div>
+      <div class="ctlbl">She means it</div>
+      <div class="cflip"><div class="cftag">No spin needed</div><div class="cftxt">"I mean it."</div><div class="cfp">— Mum, with eye contact</div></div>
+    </div>
+    <div class="card">
+      <div class="ctag" data-n="04">Character witness</div>
+      <div class="cpers">My Dad — Also Biological</div>
+      <div class="cq">"The kid is very wonderful and makes me proud."</div>
+      <div class="ctlbl">Hover for truth</div>
+      <div class="cflip"><div class="cftag">The actual truth</div><div class="cftxt">"I don't rate him."</div><div class="cfp">— Dad, coldly</div></div>
+    </div>
+    <div class="card">
+      <div class="ctag" data-n="05">Testimonial</div>
+      <div class="cpers">Cleezy — Client</div>
+      <div class="cq">"He is absolutely awesome and his skills are above anyone his age."</div>
+      <div class="ctlbl">Hover for truth</div>
+      <div class="cflip"><div class="cftag">The actual truth</div><div class="cftxt">"He gave me a good price to make my website gng so yeah gotta vouch my g up."</div><div class="cfp">— Cleezy, unprompted</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="sdiv"><span class="snum">03</span><div class="sline"></div><span class="slbl">Capabilities</span></div>
+
+<section id="skills">
+  <div class="skl">
+    <div class="sksticky">
+      <div class="skh ru">MY<br>STACK</div>
+      <p class="sks ru">Things I've spent an embarrassing amount of time learning. Self-assessed — take it with a grain of salt.</p>
+    </div>
+    <div>
+      <div class="skrow ru"><div class="sknm">HTML / CSS</div><div class="skbw"><div class="skbf" data-w="92"></div></div><div class="skp">92</div></div>
+      <div class="skrow ru"><div class="sknm">JavaScript</div><div class="skbw"><div class="skbf" data-w="80"></div></div><div class="skp">80</div></div>
+      <div class="skrow ru"><div class="sknm">React</div><div class="skbw"><div class="skbf" data-w="74"></div></div><div class="skp">74</div></div>
+      <div class="skrow ru"><div class="sknm">GSAP / Motion</div><div class="skbw"><div class="skbf" data-w="85"></div></div><div class="skp">85</div></div>
+      <div class="skrow ru"><div class="sknm">UI/UX Design</div><div class="skbw"><div class="skbf" data-w="78"></div></div><div class="skp">78</div></div>
+      <div class="skrow ru"><div class="sknm">Node / Backend</div><div class="skbw"><div class="skbf" data-w="55"></div></div><div class="skp">55</div></div>
+      <div class="skrow ru"><div class="sknm">Confidence</div><div class="skbw"><div class="skbf" data-w="99"></div></div><div class="skp">99</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="sdiv"><span class="snum">04</span><div class="sline"></div><span class="slbl">Selected Work</span></div>
+
+<section id="work" style="padding:100px 40px;text-align:center;position:relative;overflow:hidden;">
+  <div style="font-family:var(--fd);font-size:clamp(48px,7vw,96px);letter-spacing:-2px;color:rgba(240,237,230,.06);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;user-select:none;">COMING SOON</div>
+  <div class="ru">
+    <div style="font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--red);margin-bottom:24px;display:inline-flex;align-items:center;gap:12px;"><span style="display:block;width:20px;height:1px;background:var(--red)"></span>My Work</div>
+    <h2 style="font-family:var(--fs);font-size:clamp(28px,3.5vw,48px);color:var(--paper);line-height:1.3;max-width:600px;margin:0 auto 24px;">Yeah bro this portfolio is literally my only public project.</h2>
+    <p style="font-size:13px;color:rgba(240,237,230,.4);line-height:1.9;max-width:480px;margin:0 auto;">Don't worry though — <em style="color:var(--gold);font-style:normal;">genuinely life-changing projects</em> are allegedly in the works. Check back in approximately one to three business years.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="cbgt">ARYZ</div>
+  <div class="clbl rl">Let's talk</div>
+  <h2 class="ch ru">GET IN<br>TOUCH.</h2>
+  <div class="clinks">
+    <a href="mailto:aal3_3v3@aaldev.co.uk" class="cli"><span class="clt">Email</span><span class="clv">aal3_3v3@aaldev.co.uk</span></a>
+    <a href="https://discord.com/channels/@me" class="cli"><span class="clt">Discord</span><span class="clv">aal3_3v3</span></a>
+    <a href="https://github.com/aal3-33/aryz.dev" class="cli"><span class="clt">GitHub</span><span class="clv">View Repository</span></a>
+    <a href="https://www.youtube.com/@aal33v3" class="cli"><span class="clt">YouTube</span><span class="clv">Watch Channel</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="fl">© 2026 AryZ. All rights reserved.</div>
+  <div class="flogo">ARYZ</div>
+  <div class="fr">London, UK</div>
+</footer>
 </body>
 </html>
